@@ -117,10 +117,22 @@ header {
         justify-content: center;
         align-items: center;
 
+
+        &:hover img {
+            scale: 1.3;
+        }
+
+        &:hover span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+
         img {
             width: 50px;
             height: 50px;
             display: inline-block;
+            transition: 0.3s ease-in-out;
         }
 
         span {
@@ -128,6 +140,7 @@ header {
             padding-left: 15px;
             text-transform: uppercase;
             font-size: 13px;
+            transition: 0.3s ease-in-out;
         }
     }
 

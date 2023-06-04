@@ -28,6 +28,7 @@ export default {
     padding: 20px;
     text-align: left;
     margin-bottom: 25px;
+    position: relative;
 
     h5 {
         color: white;
@@ -38,7 +39,13 @@ export default {
         width: 100%;
         max-height: 100%;
         object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
 
+    &:hover img {
+        transform: scale(1.2);
+        filter: grayscale(100%);
+        transition: filter 0.5s ease-in-out;
     }
 }
 </style>

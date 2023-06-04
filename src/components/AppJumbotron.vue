@@ -138,10 +138,10 @@ export default {
         }
 
         #current-series {
-            padding: 10px;
+            padding: 10px 20px;
             color: white;
             background-color: $primary;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 800;
             position: absolute;
             bottom: -20px;
@@ -167,10 +167,19 @@ export default {
             text-align: center;
             margin-top: 50px;
 
+
             #load-button {
                 color: white;
+                font-weight: 700;
                 background-color: $primary;
                 padding: 5px 45px;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    box-shadow: 2px 4px white;
+                    padding: 10px 45px;
+                    cursor: pointer;
+                }
             }
         }
     }
