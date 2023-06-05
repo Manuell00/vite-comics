@@ -75,6 +75,10 @@ export default {
         img {
             height: 30px;
             width: 30px;
+
+            &:hover {
+                scale: 1.5;
+            }
         }
     }
 }
